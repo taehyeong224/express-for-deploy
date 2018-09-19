@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name": "test",
+    "script": "./bin/www",
+    "watch": false,
+    "exec_mode": "fork",
+    "instances": 1
+  }]
+}
