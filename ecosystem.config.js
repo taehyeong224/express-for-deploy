@@ -2,7 +2,7 @@
 module.exports = {
     deploy: {
         dev: {
-            host: ["ec2-54-180-82-211.ap-northeast-2.compute.amazonaws.com"],
+            host: ["localhost"],
             user: 'ubuntu',
             ssh_options: 'StrictHostKeyChecking=no',
             path: '/home/ubuntu/test',
