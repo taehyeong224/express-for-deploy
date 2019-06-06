@@ -1,7 +1,8 @@
- language: node_js
+language: node_js
 node_js:
-  - 10.16.0
+  - "10.16.0"
 before_install:
+  - node -v
   - npm install pm2 -g 
   - ls
   - pwd
