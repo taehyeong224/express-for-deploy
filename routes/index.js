@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get("/test", (req, res) => {
+  console.log("this is test log");
   res.status(200).json({
     msg: "hihihi"
   })
