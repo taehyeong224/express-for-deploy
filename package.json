@@ -3,16 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./dist/app.js",
+    "build": "./node_modules/.bin/tsc"
   },
   "dependencies": {
-    "body-parser": "~1.18.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
+    "cookie-parser": "^1.4.4",
+    "debug": "^2.6.9",
     "express": "^4.17.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.0",
+    "morgan": "^1.9.1",
     "serve-favicon": "~2.4.5",
+    "typescript": "^3.5.1",
     "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "@types/morgan": "^1.7.35"
   }
 }
