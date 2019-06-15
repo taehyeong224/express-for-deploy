@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cls-hooked": "^4.2.2",
+    "cls-rtracer": "^1.1.1",
     "cookie-parser": "^1.4.4",
     "debug": "^2.6.9",
     "express": "^4.17.1",

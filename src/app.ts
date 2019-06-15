@@ -8,7 +8,7 @@ import {home, test} from './routes/index';
 import {users} from './routes/users';
 const debug = require('debug')('express-for-deploy:server');
 import * as http from "http";
-
+import {expressMiddleware} from "cls-rtracer";
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-
+app.use(expressMiddleware());
 app.get('/', home);
 app.get("/test", test);
 app.get('/users', users);
